@@ -14,7 +14,7 @@ async def reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     else:
         await update.message.reply_text("Мрр~ я не совсем поняла, но звучит мило! (⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)")
 
-app = ApplicationBuilder().token(TOKEN).build()
+app = ApplicationBuilder().token(7845911101:AAFexramcay2zfbKarBkub0GQ5YGifb57C4).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, reply))
 
